@@ -25,7 +25,7 @@ def llm(state:Agent)->Agent:
         model='gemini-2.5-flash',
         google_api_key=GOOGLE_API_KEY
     )
-    prompt='''extract the number of days given in the trip'''
+    prompt='''extract the number of days given in the trip''',state['message']
     state['respn']=mod.invoke(prompt)
     prompt1='''you are a planner agent , you will break the given user trip plan
       into 2 api format as per geoapify (finding attractions using given place,nearby hotel rooms ).i dont want any extra messages other than the 2 relevant apis and here is the api_key 'f587defd1a6740719fd395be7f8e157c',here is the user request for the plan ''',state['message']
