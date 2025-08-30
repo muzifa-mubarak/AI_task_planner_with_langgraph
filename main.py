@@ -98,11 +98,11 @@ from IPython.display import Image
 '''img = app.get_graph().draw_mermaid_png()
 with open("workflow.png", "wb") as f:
     f.write(img)
-print("Workflow diagram saved as workflow.png")'''
+print("Workflow diagram saved as workflow.png")
 print("Muzifa’s Event Planner: Perfectly Planned, Beautifully Scheduled.")
 print("HI!! ITS YOUR BOT ,TELL ME WHERE YOU WANT TO GO : ")
 v=input()
 result=app.invoke({'message':v})
 #print(result['message'])
 #print(result['plan'])
-print(result['respn'])
+print(result['respn'])'''
