@@ -1,0 +1,11 @@
+langgraph
+langchain
+langchain-community
+langchain-google-genai
+requests
+faiss-cpu
+tiktoken
+networkx
+pyvis
+streamlit
+python-dotenv
